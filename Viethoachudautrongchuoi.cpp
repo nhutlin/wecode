@@ -13,10 +13,9 @@ int myStrlen(char s[]) {
 }
 void NormalizeString(char s[]){
 	s[0] = toupper(s[0]);
-	int len=myStrlen(s);
-  for (int i=1;i<len;i++)//ki tu trong chuoi
-  {
-    if (s[i]==' ') 
+	int len = myStrlen(s);
+  for (int i = 1; i < len; i++){
+    if (s[i] == ' ') 
     {
       i++;
       s[i]=toupper(s[i]);
